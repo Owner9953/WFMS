@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSDB - Movies and TV Series Database</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 w-tid="23" class="">WFMS</h1>
+      <p w-tid="25" class="">Watch Free Movies & Seasons</p>
+    </div>
+    <div class="credits" w-tid="27">
+      Made by <a href="https://eer.su/Owner" target="_blank" w-tid="29">Owner9953</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a data-section="home" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a data-section="movies"><i class="fas fa-film"></i> Movies</a></li>
+      <li><a data-section="tv-series"><i class="fas fa-tv"></i> TV Series</a></li>
+      <li><a data-section="top-rated"><i class="fas fa-star"></i> Top Rated</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for titles..." autocomplete="off">
+    </div>
+    <h2 id="content-title">Featured Content</h2>
+    <div class="featured-content" id="featured-content">
+      <!-- Content will be dynamically loaded here -->
+    </div>
+    <div id="loading" style="display: none;">Loading more content...</div>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- Modal content will be dynamically loaded here -->
+    </div>
+  </div>
+  <button id="light-mode-toggle"><i class="fas fa-sun"></i></button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
